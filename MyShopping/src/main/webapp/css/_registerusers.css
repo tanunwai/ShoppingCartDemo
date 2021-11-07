@@ -1,0 +1,103 @@
+.card-body{
+	background-color:#2ECC71;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+.wrapper{
+  padding:20px;
+}
+
+.toggle_radio{
+  position: relative;
+  background: rgba(255,255,255,.1);
+  margin: 4px auto;
+  overflow: hidden;
+  padding: 0 !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  height: 26px;
+  width: 318px;
+}
+.toggle_radio > * {
+  float: left;
+}
+.toggle_radio input[type=radio]{
+  display: none;
+}
+.toggle_radio label{
+  font: 90%/1.618 "Source Sans Pro";
+  color: #C70039;
+  z-index: 0;
+  display: block;
+  width: 80px;
+  height: 25px;
+  margin: 3px 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;  
+  text-align: center;
+}
+.toggle_option_slider{
+  width: 65px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#female:checked ~ .toggle_option_slider{
+  background: rgba(255,255,255,.3);
+  left: 1px;
+}
+#man:checked ~ .toggle_option_slider{
+  background: rgba(255,255,255,.3);
+  left: 105px;
+}
+.tdError{
+	width: 300px;
+}
+.errorClass {
+	background: #fef2f2;
+	color: #f40000;
+	font-size: 15pt;
+	height: 50px;
+	width:400px;
+	border: 1px solid #ffb8b8;
+	background-color: #fef2f2;
+	padding: 10px 10px 10px 40px;
+}
+/*
+.togglePassword{
+	margin: auto;
+	cursor: pointer;
+}*/
